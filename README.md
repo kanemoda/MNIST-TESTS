@@ -19,7 +19,7 @@ OptiMNIST employs several modern optimization techniques:
 - **High Accuracy:** Achieves around 97.7% accuracy on the MNIST test set.
 
 ## File Structure
-
+```
 .
 ├── include
 │   ├── Algorithm.hpp
@@ -41,6 +41,7 @@ OptiMNIST employs several modern optimization techniques:
 │   ├── main.cpp
 │   └── PCA.cpp
 └── Makefile
+```
 
 ## Prerequisites
 

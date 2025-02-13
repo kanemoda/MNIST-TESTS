@@ -8,8 +8,8 @@ int main()
     DataHandler dataHandler;
 
     // File paths for the MNIST training data (adjust if you want to use test files)
-    std::string trainImages = "mnist_data/train-images-idx3-ubyte";
-    std::string trainLabels = "mnist_data/train-labels-idx1-ubyte";
+    std::string trainImages = "../mnist_data/train-images-idx3-ubyte";
+    std::string trainLabels = "../mnist_data/train-labels-idx1-ubyte";
 
     // Load the MNIST data
     if (!dataHandler.loadData(trainImages, trainLabels))

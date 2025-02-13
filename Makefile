@@ -1,7 +1,7 @@
 .PHONY: all menu clean
 
 # List of subproject directories.
-SUBPROJECTS = OptiMNIST DeepMNIST ClassicMNIST
+SUBPROJECTS = OptiMNIST FNN_MNIST
 
 # Default target: show the menu.
 all: menu
@@ -17,8 +17,7 @@ menu:
 	read choice; \
 	case $$choice in \
 	  1) $(MAKE) -C OptiMNIST run ;; \
-	  2) $(MAKE) -C DeepMNIST run ;; \
-	  3) $(MAKE) -C ClassicMNIST run ;; \
+	  2) $(MAKE) -C FNN_MNIST run ;; \
 	  *) echo "Invalid option"; exit 1 ;; \
 	esac
 
@@ -26,3 +25,4 @@ clean:
 	@for d in $(SUBPROJECTS); do \
 	  $(MAKE) -C $$d clean; \
 	done
+
